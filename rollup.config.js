@@ -6,7 +6,7 @@ const banner = `/* webgl-memory@${pkg.version}, license MIT */`;
 
 export default [
   {
-    input: 'src/webgl-memory.js',
+    input: 'src/webgl-memory.ts',
     plugins: [
       resolve({
         modulesOnly: true,
