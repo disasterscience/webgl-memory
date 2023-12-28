@@ -25,7 +25,7 @@ import { augmentAPI } from "./augment-api.js";
 
 export function wrapGetContext(Ctor: any) {
     const oldFn = Ctor.prototype.getContext;
-    Ctor.prototype.getContext = function (type: any, ...args: any) {
+    Ctor.prototype.getContext = function(type: any, ...args: any) {
         const ctx = oldFn.call(this, type, ...args);
         // Using bindTexture to see if it's WebGL. Could check for instanceof WebGLRenderingContext
         // but that might fail if wrapped by debugging extension

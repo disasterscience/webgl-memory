@@ -17,6 +17,9 @@
   "keywords": [
     "webgl"
   ],
+  "main": "./dist/webgl-memory.js",
+  "module": "./dist/webgl-memory.js",
+  "types": "./dist/index.d.ts",
   "author": "Gregg Tavares",
   "license": "MIT",
   "bugs": {
@@ -25,6 +28,7 @@
   "homepage": "https://github.com/greggman/webgl-memory#readme",
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.1.5",
     "eslint": "^7.5.0",
     "eslint-plugin-html": "^6.2.0",
     "eslint-plugin-one-variable-per-var": "^0.0.3",
